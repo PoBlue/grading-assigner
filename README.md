@@ -50,3 +50,5 @@ $ ./grading-assigner.py
 ```
 
 Press ctrl-c to quit.
+
+can send with qq mail
