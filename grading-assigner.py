@@ -115,7 +115,12 @@ def request_reviews(token):
     while True:
         # Loop and wait until fewer than 2 reviews assigned, as creating
         # a request will fail
-        wait_for_assign_eligible()
+        try:
+            wait_for_assign_eligible()
+        except ValueError as error:
+            logger.info("ValueError, wait for 30 seconds and start again")
+            time.sleep(30.0)
+            wait_for_assign_eligible()
 
         if current_request is None:
             logger.info('Creating a request for ' + str(len(project_language_pairs)) +
