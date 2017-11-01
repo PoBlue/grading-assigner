@@ -67,7 +67,7 @@ def wait_for_assign_eligible():
             logger.info('Waiting for assigned submissions < 2')
         # Wait 30 seconds before checking to see if < 2 open submissions
         # that is, waiting until a create submission request will be permitted
-        time.sleep(600.0)
+        time.sleep(1200.0)
 
 def refresh_request(current_request):
     logger.info('Refreshing existing request')
