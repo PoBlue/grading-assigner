@@ -9,6 +9,7 @@ import time
 import pytz
 from dateutil import parser
 from datetime import datetime, timedelta
+from data import UNASSIGN_IDS, UNASSIGN_NAMES
 
 utc = pytz.UTC
 
@@ -90,7 +91,7 @@ def fetch_certified_pairs():
     certs_resp.raise_for_status()
 
     certs = certs_resp.json()
-    project_ids = [cert['project']['id'] for cert in certs if cert['status'] == 'certified']
+    project_ids = [cert['project']['id'] for cert in certs if cert['status'] == 'certified' and cert['project']['name'] not in UNASSIGN_NAMES]
 
     logger.info("Found certifications for project IDs: %s in languages %s",
                 str(project_ids), str(languages))
