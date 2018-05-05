@@ -62,11 +62,11 @@ def alert_for_assignment(current_request, headers):
 def wait_for_assign_eligible():
     while True:
         assigned_resp = requests.get(ASSIGNED_COUNT_URL, headers=headers)
-        if assigned_resp.status_code == 404 or assigned_resp.json()['assigned_count'] < 2:
+        if assigned_resp.status_code == 404 or assigned_resp.json()['assigned_count'] < 5:
             break
         else:
-            logger.info('Waiting for assigned submissions < 2')
-        # Wait 30 seconds before checking to see if < 2 open submissions
+            logger.info('Waiting for assigned submissions < 5')
+        # Wait 30 seconds before checking to see if < 5 open submissions
         # that is, waiting until a create submission request will be permitted
         time.sleep(900.0)
 
@@ -122,6 +122,11 @@ def request_reviews(token):
             logger.info("ValueError, wait for 30 seconds and start again")
             time.sleep(30.0)
             wait_for_assign_eligible()
+        except requests.exceptions.ProxyError:
+            logger.info("proxy error")
+            time.sleep(30.0)
+            wait_for_assign_eligible()
+            
 
         if current_request is None:
             logger.info('Creating a request for ' + str(len(project_language_pairs)) +

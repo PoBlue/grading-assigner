@@ -4,39 +4,44 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-ASSIGNED_COUNT_URL	../grading-assigner.py	/^ASSIGNED_COUNT_URL = '{}\/me\/submissions\/assigned_count.json'.format(BASE_URL)$/;"	kind:variable	line:25
-ASSIGNED_URL	../grading-assigner.py	/^ASSIGNED_URL = '{}\/me\/submissions\/assigned.json'.format(BASE_URL)$/;"	kind:variable	line:26
-BASE_URL	../grading-assigner.py	/^BASE_URL = 'https:\/\/review-api.udacity.com\/api\/v1'$/;"	kind:variable	line:16
-CERTS_URL	../grading-assigner.py	/^CERTS_URL = '{}\/me\/certifications.json'.format(BASE_URL)$/;"	kind:variable	line:17
-CREATE_REQUEST_URL	../grading-assigner.py	/^CREATE_REQUEST_URL = '{}\/submission_requests.json'.format(BASE_URL)$/;"	kind:variable	line:20
-DELETE_URL_TMPL	../grading-assigner.py	/^DELETE_URL_TMPL = '{}\/submission_requests\/{}.json'$/;"	kind:variable	line:21
-GET_REQUEST_URL_TMPL	../grading-assigner.py	/^GET_REQUEST_URL_TMPL = '{}\/submission_requests\/{}.json'$/;"	kind:variable	line:22
-ME_REQUEST_URL	../grading-assigner.py	/^ME_REQUEST_URL = '{}\/me\/submission_requests.json'.format(BASE_URL)$/;"	kind:variable	line:19
-ME_URL	../grading-assigner.py	/^ME_URL = '{}\/me'.format(BASE_URL)$/;"	kind:variable	line:18
-PUT_REQUEST_URL_TMPL	../grading-assigner.py	/^PUT_REQUEST_URL_TMPL = '{}\/submission_requests\/{}.json'$/;"	kind:variable	line:23
-REFRESH_URL_TMPL	../grading-assigner.py	/^REFRESH_URL_TMPL = '{}\/submission_requests\/{}\/refresh.json'$/;"	kind:variable	line:24
-REQUESTS_PER_SECOND	../grading-assigner.py	/^REQUESTS_PER_SECOND = 1 # Please leave this alone.$/;"	kind:variable	line:29
-REVIEW_URL	../grading-assigner.py	/^REVIEW_URL = 'https:\/\/review.udacity.com\/#!\/submissions\/{sid}'$/;"	kind:variable	line:28
-alert_for_assignment	../grading-assigner.py	/^def alert_for_assignment(current_request, headers):$/;"	kind:function	line:50
+ASSIGNED_COUNT_URL	../grading-assigner.py	/^ASSIGNED_COUNT_URL = '{}\/me\/submissions\/assigned_count.json'.format(BASE_URL)$/;"	kind:variable	line:26
+ASSIGNED_URL	../grading-assigner.py	/^ASSIGNED_URL = '{}\/me\/submissions\/assigned.json'.format(BASE_URL)$/;"	kind:variable	line:27
+BASE_URL	../grading-assigner.py	/^BASE_URL = 'https:\/\/review-api.udacity.com\/api\/v1'$/;"	kind:variable	line:17
+CERTS_URL	../grading-assigner.py	/^CERTS_URL = '{}\/me\/certifications.json'.format(BASE_URL)$/;"	kind:variable	line:18
+CREATE_REQUEST_URL	../grading-assigner.py	/^CREATE_REQUEST_URL = '{}\/submission_requests.json'.format(BASE_URL)$/;"	kind:variable	line:21
+DELETE_URL_TMPL	../grading-assigner.py	/^DELETE_URL_TMPL = '{}\/submission_requests\/{}.json'$/;"	kind:variable	line:22
+GET_REQUEST_URL_TMPL	../grading-assigner.py	/^GET_REQUEST_URL_TMPL = '{}\/submission_requests\/{}.json'$/;"	kind:variable	line:23
+ME_REQUEST_URL	../grading-assigner.py	/^ME_REQUEST_URL = '{}\/me\/submission_requests.json'.format(BASE_URL)$/;"	kind:variable	line:20
+ME_URL	../grading-assigner.py	/^ME_URL = '{}\/me'.format(BASE_URL)$/;"	kind:variable	line:19
+PUT_REQUEST_URL_TMPL	../grading-assigner.py	/^PUT_REQUEST_URL_TMPL = '{}\/submission_requests\/{}.json'$/;"	kind:variable	line:24
+REFRESH_URL_TMPL	../grading-assigner.py	/^REFRESH_URL_TMPL = '{}\/submission_requests\/{}\/refresh.json'$/;"	kind:variable	line:25
+REQUESTS_PER_SECOND	../grading-assigner.py	/^REQUESTS_PER_SECOND = 1 # Please leave this alone.$/;"	kind:variable	line:30
+REVIEW_URL	../grading-assigner.py	/^REVIEW_URL = 'https:\/\/review.udacity.com\/#!\/submissions\/{sid}'$/;"	kind:variable	line:29
+UNASSIGN_IDS	../data.py	/^UNASSIGN_IDS = [$/;"	kind:variable	line:1
+UNASSIGN_IDS	../grading-assigner.py	/^from data import UNASSIGN_IDS, UNASSIGN_NAMES$/;"	kind:namespace	line:12
+UNASSIGN_NAMES	../data.py	/^UNASSIGN_NAMES = [$/;"	kind:variable	line:6
+UNASSIGN_NAMES	../grading-assigner.py	/^from data import UNASSIGN_IDS, UNASSIGN_NAMES$/;"	kind:namespace	line:12
+alert_for_assignment	../grading-assigner.py	/^def alert_for_assignment(current_request, headers):$/;"	kind:function	line:51
 argparse	../grading-assigner.py	/^import argparse$/;"	kind:namespace	line:4
-args	../grading-assigner.py	/^    args = cmd_parser.parse_args()$/;"	kind:variable	line:170
-cmd_parser	../grading-assigner.py	/^    cmd_parser = argparse.ArgumentParser(description =$/;"	kind:variable	line:159
+args	../grading-assigner.py	/^    args = cmd_parser.parse_args()$/;"	kind:variable	line:171
+cmd_parser	../grading-assigner.py	/^    cmd_parser = argparse.ArgumentParser(description =$/;"	kind:variable	line:160
+data.py	../data.py	1;"	kind:file	line:1
 datetime	../grading-assigner.py	/^from datetime import datetime, timedelta$/;"	kind:namespace	line:11
-fetch_certified_pairs	../grading-assigner.py	/^def fetch_certified_pairs():$/;"	kind:function	line:83
+fetch_certified_pairs	../grading-assigner.py	/^def fetch_certified_pairs():$/;"	kind:function	line:84
 grading-assigner.py	../grading-assigner.py	1;"	kind:file	line:1
-headers	../grading-assigner.py	/^headers = None$/;"	kind:variable	line:35
-logger	../grading-assigner.py	/^logger = logging.getLogger(__name__)$/;"	kind:variable	line:32
+headers	../grading-assigner.py	/^headers = None$/;"	kind:variable	line:36
+logger	../grading-assigner.py	/^logger = logging.getLogger(__name__)$/;"	kind:variable	line:33
 logging	../grading-assigner.py	/^import logging$/;"	kind:namespace	line:5
 os	../grading-assigner.py	/^import os$/;"	kind:namespace	line:6
 parser	../grading-assigner.py	/^from dateutil import parser$/;"	kind:namespace	line:10
 pytz	../grading-assigner.py	/^import pytz$/;"	kind:namespace	line:9
-refresh_request	../grading-assigner.py	/^def refresh_request(current_request):$/;"	kind:function	line:72
-request_reviews	../grading-assigner.py	/^def request_reviews(token):$/;"	kind:function	line:101
+refresh_request	../grading-assigner.py	/^def refresh_request(current_request):$/;"	kind:function	line:73
+request_reviews	../grading-assigner.py	/^def request_reviews(token):$/;"	kind:function	line:102
 requests	../grading-assigner.py	/^import requests$/;"	kind:namespace	line:7
 signal	../grading-assigner.py	/^import signal$/;"	kind:namespace	line:2
-signal_handler	../grading-assigner.py	/^def signal_handler(signal, frame):$/;"	kind:function	line:37
+signal_handler	../grading-assigner.py	/^def signal_handler(signal, frame):$/;"	kind:function	line:38
 sys	../grading-assigner.py	/^import sys$/;"	kind:namespace	line:3
 time	../grading-assigner.py	/^import time$/;"	kind:namespace	line:8
 timedelta	../grading-assigner.py	/^from datetime import datetime, timedelta$/;"	kind:namespace	line:11
-utc	../grading-assigner.py	/^utc = pytz.UTC$/;"	kind:variable	line:13
-wait_for_assign_eligible	../grading-assigner.py	/^def wait_for_assign_eligible():$/;"	kind:function	line:61
+utc	../grading-assigner.py	/^utc = pytz.UTC$/;"	kind:variable	line:14
+wait_for_assign_eligible	../grading-assigner.py	/^def wait_for_assign_eligible():$/;"	kind:function	line:62
